@@ -1,0 +1,11 @@
+network={
+	ssid="314Lab"
+	#psk="03314lab"
+	psk=99ab4997bc0df8e3ea47428fefb92bd14df5cc381ff7d3cf1f43d090f140193d
+}
+
+network={
+	ssid="202_2.4G"
+	#psk="26872687"
+	psk=c340cd129df9fc639aa60c4181d8e73fd42e399077a6c9f20c1197a14ae5c347
+}

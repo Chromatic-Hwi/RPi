@@ -1,0 +1,48 @@
+1. 깃허브 설치 
+$ sudo apt-get install git
+
+1.5. 깃허브 버전 확인
+$ sudo git --version
+
+2. Start Github
+$ sudo git init
+
+3. 라즈베리파이에 깃허브 사용자 정보 저장 (깃허브 계정 정보 아님)
+$ sudo git config --global user.name "NAME"
+$ sudo git config --global user.email "E-MAIL"
+
+4. 커밋
+$ sudo git add /원하는 파일 경로
+$ sudo git add /home/hwi/문서/Git
+
+$ sudo git commit -m "원하는 커밋 메세지 입력"
+
+5. 브랜치 선택
+$ sudo git branch -M main
+
+6. 저장소 선택
+$ sudo git remote add origin https://저장소의 주소
+https://github.com/Chromatic-Hwi/RPi.git
+
+7. 최종 푸시
+$ sudo git push -u origin main
+
+
+git_push.sh
+#!/bin/bash
+$ echo "Start GitHub Psuh"
+$ echo "Enter the commit mesage: "
+read CM
+$ sudo git init
+# (sudo git config??)
+# 아래 경로는 고정
+$ sudo git add /문서/Git 
+$ sudo git commit -m $(echo CM)
+$ sudo git branch -M main
+# 아래 저장소는 고정
+$ sudo git remote add origin https://github.com/Chromatic-Hwi/RPi.git
+$ sudo git pull origin main
+$ sudo git push -u origin main
+# 중간에 '-u' 는 없어도 되는 것 같은데?
+
+
