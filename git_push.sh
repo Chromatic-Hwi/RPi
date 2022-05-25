@@ -10,7 +10,7 @@ $(sudo git branch -M main)
 
 $(sudo git remote add add origin https://github.com/Chromatic-Hwi/RPi.git)
 
-($ sudo git pull origin main)
-($ sudo git push origin main)
+$(sudo git pull origin main)
+$(sudo git push origin main)
 
 echo "Push Success!"
