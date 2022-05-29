@@ -1,0 +1,30 @@
+와이파이 연결안됨 문제
+기존 해결법>>
+https://miinsun.tistory.com/28
+https://eelu175.tistory.com/29
+참고
+
+Pi Firmware Task Force Github 주소
+
+https://github.com/pftf
+
+라즈베리 파이 버전에 맞게 RPi3나 RPi4의 Repository 주소 복사
+
+cd 경로 ~~ 들어가서 mkdir 로 폴더 생성
+
+git clone 주소.git 으로 내용 다운로드, 복사
+
+[라즈베리파이 폴더 캡처]
+
+내용물 중 파일 4개 이름
+
+관리자 권한으로 
+
+$ sudo cp 파일~ /lib/firmware/brcm/
+($ sudo mv file1 file2 file3 file4 /lib/firmware/brcm/ 이나
+$ sudo cp file1 file2 file3 file4 /lib/firmware/brcm/로는 못 옮기나? 다른 폴더 만들어서 실험해볼것.)
+만약 옮긴다면 옮겨갈 경로는 절대경로로 전부를 입력해줘야 함
+$ sudo reboot
+
+
+
