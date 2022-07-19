@@ -3,9 +3,16 @@
 $ sudo iwlist wlan0 scan
 와이파이 정보 확인
 $ sudo wpa_passphrase wifi 이름 wifi 비번
-$ sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
-# vi 로 안하고 그냥 nano 해도 되는거 아닌가?
-i, a, wq, q! 등이용
+$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 $ iwconfig
+
 3. vnc 연결
-4 . 한글 설정
++vnc 출력 해상도 설정
+
+이후는 vnc viewer로 진행
+4 . 한글 설정(국가 및 set locale 에러 발생시 해결)
+-블루투스 자동 연결
+-배경과 폴더로 용도 명시
+-
+
+
