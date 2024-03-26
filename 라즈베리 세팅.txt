@@ -40,5 +40,8 @@ $ git fetch
 $ git pull
 
 7. Commit 생성 후 Push
-$ 
-
+$ git commit -am "commit 헤드 메세지를 여기다 적으면 됨."
+# '-am' 뜻이 변경사항을 추가하고 메세지도 적겠다는 뜻임.
+$ git push
+이후에 github 저장소 주소 입력할 때 들어가있는 내 계정 이름 넣고,
+Token 입력하면 완료.
