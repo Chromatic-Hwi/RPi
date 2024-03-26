@@ -16,3 +16,29 @@ $ iwconfig
 -
 
 
+!!! Git 사용하기
+1. git 설치
+$ sudo apt install git
+
+2. git 정보 입력 
+$ git config --global user.name "Any name"
+$ git config --global user.email "Acccount E-mail"
+$ git config --global core.editor nano
+
+3. git 폴더 생성 후 해당 폴더로 이동
+$ mkdir github
+$ cd github
+
+4. git 시작
+$ git init
+
+5. 저장소 clone 
+$ git clone ~~~~~~~~~
+
+6. Fetch 후 Pull
+$ git fetch
+$ git pull
+
+7. Commit 생성 후 Push
+$ 
+
